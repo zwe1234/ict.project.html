@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fixbo</title>
+    <style type="text/css">
+    	* {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: cursive;
+
+}
+.header{
+  
+  background-color: orange;
+
+}
+.footer{
+  padding: 20px;
+  background-color: orange;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.menu li:hover{
+  background-color: red;
+}
+.menu li{
+  padding: 8 px;
+  margin-bottom: 7px;
+  background-color:  rgb(200,100,20);
+  color: green;
+        box-shadow: 0 1px 3px rgb(200,50,20);
+}
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+[class*="col-"]{
+	float: left;
+	padding: 20px;
+	font-size:20px;
+}
+   @media only screen and (max-width: 800px){
+      [class*="col-"]{
+          width: 100%;
+
+      }
+   }
+
+
+
+ </style>
+ </head>
+ <body>
+	<header class="header">Quackit</header>
+  <div class="row">
+	<nav class="col-3 menu" >
+	<ul style="list-style-type: none;">
+		<li>Flexbox-Introduction</li>
+		<li>Flexbox-create a Flexbox</li>
+		<li>Flex-create a Website Layout</li>
+		<li>Flex-Nested Flexbox</li>
+		<li>Flexbox-Create a Responsive Layout</li>
+		<li>Flexbox-Create a Media Object</li>
+	</ul>
+</nav>
+<section class="col-6">
+	<h1>Flexbox CSS</h1>
+	<p style="font-family: cursive;">Specifies the alignment for a flex item (overrides the flex container's align-items property)
+flex	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis	Specifies the initial length of a flex item
+flex-grow	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+flex-shrink	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+</p>
+</section>
+<aside>
+  <h3>HTML</h3>
+<p>Hyper Text Markup Language</p>
+<h3>Css</h3>
+<p>Cascading style sheets</p>
+</aside>
+</div>
+<footer class="footer">
+  Resize the browser to see how the content resspond to the resixing
+</footer>
+
+</body>
+</html>
